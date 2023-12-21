@@ -1,0 +1,253 @@
+/* Font */
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@400;600;700;800&display=swap");
+
+/* Root */
+
+:root {
+  --primaryTextColor: #f4f4f4;
+  --secondaryTextColor: rgb(216, 108, 19);
+
+  --borderColor: #f1f1f1;
+  --lineColor: #d9d9d9;
+
+  --primaryBackgroundColor: #fff;
+  --secondaryBackgroundColor: #fbfbfb;
+  --thirdBackgroundColor: #f5f3f3;
+  --fourthBackgroundColor: #081b29;
+
+  --primaryIconCOlor: #7e74f1;
+  --primaryIconColorHover: #5d51e8;
+
+  --sectionPadding: 6rem 0;
+  --secondarySectionPadding: 50px;
+
+  --itemBorderRadius: 0.7rem;
+}
+
+body {
+  background-color: var(--fourthBackgroundColor);
+  font-family: "Montserrat";
+}
+
+#about h3,
+#menu h3,
+#contact h3 {
+  font-family: "Bitter";
+}
+/* Navbar */
+
+.navbar-brand {
+  font-family: "Rubik Scribble";
+}
+
+#navbarNav ul li a:hover {
+  color: var(--secondaryTextColor);
+}
+
+/* Home */
+
+#home img {
+  background-size: cover;
+  width: 1400px;
+  height: 350px;
+}
+
+.p-1 {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 50px;
+  color: var(--primaryTextColor);
+}
+
+.p-1 a {
+  text-decoration: none;
+  color: var(--secondaryTextColor);
+}
+
+.p-1 a:hover {
+  color: var(--primaryIconColorHover);
+}
+
+/* About */
+#about {
+  padding-top: var(--secondarySectionPadding);
+}
+
+#about img {
+  width: 280px;
+  height: 280px;
+  margin-top: -30px;
+  transform: scale(1) rotate(15deg);
+}
+
+#about .booth {
+  width: 250px;
+  height: 250px;
+  transform: rotate(0) scale(0.9);
+  margin-left: -100px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.about-2 img {
+  width: 250px;
+  height: 250px;
+}
+
+#about .hero-2 {
+  position: absolute;
+  z-index: -1;
+  left: 25px;
+  transform: scale(1.7) rotate(-15deg);
+}
+
+/* Menu */
+
+#menu {
+  padding-top: var(--secondarySectionPadding);
+}
+
+#menu h3 {
+  padding-bottom: var(--secondarySectionPadding);
+}
+
+.card img {
+  height: 300px;
+  padding: 3px;
+}
+
+/* Contact Section */
+
+#contact {
+  padding-top: 200px;
+  padding-left: 115px;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 3rem;
+}
+
+.contact-right {
+  padding-left: 100px;
+}
+
+.contact-right p {
+  color: var(--secondaryTextColor);
+}
+
+.contact-right a {
+  text-decoration: none;
+  color: var(--secondaryTextColor);
+}
+
+.contact-right a:hover {
+  color: var(--primaryIconColorHover);
+}
+
+.contact-form div {
+  margin-bottom: 1.4rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.75rem 1.3rem;
+  font-family: "Roboto", sans-serif;
+  background: var(--secondaryBackgroundColor);
+  border: 1px solid var(--borderColor);
+  border-radius: 3px;
+  resize: none;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea {
+  color: #9d9fa1;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border: 1px solid #7d7d7d;
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 0.75rem 1.3rem;
+  background-color: var(--primaryIconCOlor);
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.btn-submit:hover {
+  background-color: #5d51e8;
+}
+
+.contact-item {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.contact-item-icon {
+  background: var(--thirdBackgroundColor);
+  width: 53px;
+  height: 53px;
+  border-radius: 9px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-item-icon svg {
+  fill: var(--primaryIconCOlor);
+}
+
+.contact-item-detail h4 {
+  margin-bottom: 0.6rem;
+}
+
+/* Foooter Section */
+
+footer {
+  padding: 4rem 0;
+  background: var(--fourthBackgroundColor);
+  text-align: center;
+  padding-top: 120px;
+}
+
+footer p {
+  color: var(--primaryBackgroundColor);
+}
+
+.footer-icons {
+  margin-top: -100px;
+  margin-bottom: 1rem;
+}
+
+.footer-icons a {
+  margin: 0 0.5rem;
+}
+
+.footer-icons svg {
+  fill: #fff;
+  transition: 0.3s;
+}
+
+.footer-icons a:hover svg {
+  transform: rotate(15deg);
+  fill: orangered;
+}
+
+footer span {
+  font-family: "Rubik Scribble";
+  font-weight: bold;
+}
