@@ -120,6 +120,18 @@ body {
   padding: 3px;
 }
 
+/* Location */
+
+#location {
+  padding-top: 100px;
+}
+
+.map iframe {
+  width: 1320px;
+  height: 400px;
+  padding: 10px 20px;
+  margin-left: 10px;
+}
 /* Contact Section */
 
 #contact {
